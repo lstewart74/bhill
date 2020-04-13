@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<link href='../fullcalendar.min.css' rel='stylesheet' />
+<link href='../fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      editable: false,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        // SOCIAL EVENTS
+		{
+         title:  'Pool Open House \n & BBQ',
+            start:  '2019-06-16',
+			end:  '2019-06-16',
+            allDay: true
+      	},
+		{
+         title:  'ADULT PARTY!',
+            start:  '2019-07-13',
+			end:  '2019-07-13',
+            allDay: true
+      	},
+
+//		{
+//        title:  'Kids Movie Night \n (TBA)',
+//            start:  '2019-07-04',
+//			end:  '2019-07-04',
+//            allDay: true
+//      	},
+
+		{
+         title:  'Pre-season 4-8pm',
+            start:  '2019-06-17',
+			end:  '2019-06-23',
+            allDay: true
+      	},
+        {
+         title:  'BHILL School visit',
+            start:  '2019-06-19',
+			end:  '2019-06-20',
+            allDay: true
+      	},
+
+		{
+         title:  'Hamburger Happening \n end of season BBQ',
+            start:  '2019-08-24',
+			end:  '2019-08-24',
+            allDay: true
+      	},
+		{
+         title:  'Post-season: 1600-2000hr \n (weather permitting)',
+            start:  '2019-08-26',
+			end:  '2019-08-31',
+            allDay: true
+          },
+        {
+         title:  'Post-season: \n Adults 1200-1300hr \n Free swim 1300-2000hr',
+            start:  '2019-08-31',
+			end:  '2019-08-31',
+            allDay: true
+          },
+        {
+         title:  'Post-season: \n Adults 1200-1300hr \n Free swim 1300-1700hr \n Doggy swim 1700hr',
+            start:  '2019-09-01',
+			end:  '2019-09-01',
+            allDay: true
+      	},
+        {
+         title:  'Bronze Written Exam',
+            start:  '2019-08-13',
+			end:  '2019-08-13',
+            allDay: true
+      	},
+        {
+         title:  'Bronze Practical Exam',
+            start:  '2019-08-21',
+			end:  '2019-08-21',
+            allDay: true
+      	},
+
+        
+        //------------SWIM LESSONS---------------
+        
+        {
+         title:  'START Session 1 \n MORNING swim \n lessons',
+            start:  '2019-06-24',
+			end:  '2019-06-24',
+            allDay: true
+        },
+        {
+        title:  'START Session 1 \n EVENING swim \n lessons',
+            start:  '2019-06-25',
+			end:  '2019-06-25',
+            allDay: true
+        },
+        {
+         title:  'START Session 2 \n MORNING swim \n lessons',
+            start:  '2019-07-08',
+			end:  '2019-07-08',
+            allDay: true
+        },
+        {
+        title:  'START Session 3 \n MORNING swim \n lessons',
+            start:  '2019-07-22',
+			end:  '2019-07-22',
+            allDay: true
+        },
+        {
+        title:  'START Session 2 \n EVENING swim \n lessons',
+            start:  '2019-07-23',
+			end:  '2019-07-23',
+            allDay: true
+        },
+        {
+        title:  'START Session 4 \n MORNING swim \n lessons',
+            start:  '2019-08-05',
+			end:  '2019-08-05',
+            allDay: true
+        },
+       
+
+
+
+
+		//------------SWIM MEETS---------------
+		{
+         title:  'Swim team @ WAC',
+            start:  '2019-06-26',
+			end:  '2019-06-26',
+            allDay: true
+      	},
+		{
+         title:  'Swim team BYE WEEK',
+            start:  '2019-07-03',
+			end:  '2019-07-03',
+            allDay: true
+      	},
+		{
+         title:  'Swim team @ SIDE',
+            start:  '2019-08-07',
+			end:  '2019-08-07',
+            allDay: true
+      	},
+		{
+         title:  'Swim team vs BDAC \n (pool closed 1730-2100)',
+            start:  '2019-07-17',
+			end:  '2019-07-17',
+            allDay: true
+      	},
+		{
+         title:  'Swim team vs RPRA \n (pool closed 1730-2100)',
+            start:  '2019-07-24',
+			end:  '2019-07-24',
+            allDay: true
+      	},
+		{
+         title:  'Swim team vs VIK \n (pool closed 1730-2100)',
+            start:  '2019-07-31',
+			end:  '2019-07-31',
+            allDay: true
+      	},
+		{
+         title:  'Swim team @ CEDAR',
+            start:  '2019-07-10',
+			end:  '2019-07-10',
+            allDay: true
+      	},
+		{
+         title:  'Swim team - SECTIONS \n @ CEDAR',
+            start:  '2019-08-10',
+			end:  '2019-08-10',
+            allDay: true
+      	},
+		{
+         title:  'Swim team - FINALS \n @ BDAC',
+            start:  '2019-08-17',
+			end:  '2019-08-17',
+            allDay: true
+      	},
+        {
+         title:  'Summer Swimmers \n Meet @ WAC',
+            start:  '2019-08-02',
+			end:  '2019-08-02',
+            allDay: true
+      	},
+		//------------END SWIM MEETS---------------
+		
+		
+
+		//------------DIVING MEETS---------------
+		{
+         title:  'Diving @ PVPC 0830hr',
+            start:  '2019-06-30',
+			end:  '2019-06-30',
+            allDay: true
+      	},
+		{
+         title:  'Diving @ MWAC 0830hr',
+            start:  '2019-07-07',
+			end:  '2019-07-07',
+            allDay: true
+      	},
+		{
+         title:  'Diving vs HCP 0830hr',
+            start:  '2019-07-14',
+			end:  '2019-07-14',
+            allDay: true
+      	},
+		{
+         title:  'Diving @ DIXIE 0830hr',
+            start:  '2019-07-21',
+			end:  '2019-07-21',
+            allDay: true
+      	},
+		{
+         title:  'Diving BYE WEEK',
+            start:  '2019-07-28',
+			end:  '2019-07-28',
+            allDay: true
+      	},
+		{
+         title:  'Diving vs BEAU 0830hr',
+            start:  '2019-08-04',
+			end:  '2019-08-04',
+            allDay: true
+      	},
+		{
+         title:  'Diving vs SEN 0830hr',
+            start:  '2019-08-11',
+			end:  '2019-08-11',
+            allDay: true
+      	},
+		{
+         title:  'Diving Novice Meet \n @ SIDE 1000hr',
+            start:  '2019-07-29',
+			end:  '2019-07-29',
+            allDay: true
+      	},
+		{
+         title:  'Diving Finals \n @ TBD',
+            start:  '2019-08-18',
+			end:  '2019-08-18',
+            allDay: true
+      	},
+          {
+         title:  'Pancake Breakfast',
+            start:  '2019-08-11',
+			end:  '2019-08-11',
+            allDay: true
+      	},
+
+		//------------END DIVING MEETS---------------
+		
+		
+
+		//------------SYNCHRO MEETS---------------
+		{
+         title:  'Synchro Summer \n Competition @ \n VIK',
+            start:  '2019-08-08',
+			end:  '2019-08-08',
+            allDay: true
+      	},
+		{
+         title:  'Synchro Jr/Sr Solos & \n Duets @  HCP',
+            start:  '2019-08-13',
+			end:  '2019-08-13',
+            allDay: true
+      	},
+		{
+         title:  'Synchro Team \n Competition \n @ SHORE',
+            start:  '2019-08-15',
+			end:  '2019-08-15',
+            allDay: true
+      	},
+
+		//------------END SYNCHRO MEETS---------------
+
+
+
+		//------------WATER POLO---------------
+        {
+         title:  'Water polo 10-/12- \n @ WAC 1030-1200hr',
+            start:  '2019-07-07',
+			end:  '2019-07-07',
+            allDay: true
+          },
+        {
+         title:  'Water polo 10-/12- \n @ WAC 1030-1200hr',
+            start:  '2019-07-14',
+			end:  '2019-07-14',
+            allDay: true
+      	},  
+        {
+         title:  'Water polo 10-/12- \n @ WAC 1030-1200hr',
+            start:  '2019-07-21',
+			end:  '2019-07-21',
+            allDay: true
+      	},
+        {
+         title:  'Water polo 10-/12- \n @ WAC 1030-1200hr',
+            start:  '2019-07-28',
+			end:  '2019-07-28',
+            allDay: true
+      	},
+        {
+         title:  'Water polo 10-/12- \n @ WAC 1030-1200hr',
+            start:  '2019-08-04',
+			end:  '2019-08-04',
+            allDay: true
+      	},
+
+
+        {
+         title:  'Water polo vs HCP \n (pool closed 1900-2100)',
+            start:  '2019-06-27',
+			end:  '2019-06-27',
+            allDay: true
+      	},
+		{
+         title:  'Water polo vs DIXIE \n (pool closed 1900-2100)',
+            start:  '2019-07-01',
+			end:  '2019-07-01',
+            allDay: true
+      	},
+		{
+         title:  'Water polo @ WAC',
+            start:  '2019-07-04',
+			end:  '2019-07-04',
+            allDay: true
+      	},
+		{
+         title:  'Water polo vs BEAU \n (pool closed 1900-2100)',
+            start:  '2019-07-08',
+			end:  '2019-07-08',
+            allDay: true
+      	},
+		{
+         title:  'Water polo @ CEDAR ',
+            start:  '2019-07-11',
+			end:  '2019-07-11',
+            allDay: true
+      	},
+		{
+         title:  'Water polo \n BYE WEEK ',
+            start:  '2019-07-15',
+			end:  '2019-07-15',
+            allDay: true
+      	},
+		{
+         title:  'Water polo vs SIDE \n (pool closed 1900-2100)',
+            start:  '2019-07-18',
+			end:  '2019-07-18',
+            allDay: true
+      	},
+        {
+         title:  'Water polo bantam U12 \n mixed tournament \n (multiple pools)',
+            start:  '2019-07-27',
+			end:  '2019-07-27',
+            allDay: true
+      	},
+        {
+         title:  'Mark Bernotas U14 \n mixed water polo \n tournament (multiple \n pools)',
+            start:  '2019-07-26',
+			end:  '2019-07-26',
+            allDay: true
+      	},
+        {
+         title:  'Water Polo Finals \ @ BHILL',
+            start:  '2019-08-12',
+			end:  '2019-08-12',
+            allDay: true
+      	},
+        {
+         title:  'Beacon Hill Classic \n Water Polo \n Tournament',
+            start:  '2019-08-16',
+			end:  '2019-08-16',
+            allDay: true
+      	}
+
+		// PLAYOFFS --------------------------------------------?????????????????
+
+        //------------END WATER POLO--------------
+
+
+
+//        {
+//          title: 'Long Event',
+//          start: '2019-03-07',
+//          end: '2019-03-10'
+//        },
+//        {
+//          id: 999,
+//          title: 'Repeating Event',
+//          start: '2019-03-09T16:00:00'
+//        },
+//        {
+//          id: 999,
+//          title: 'Repeating Event',
+//          start: '2019-03-16T16:00:00'
+//        },
+//        {
+//          title: 'Conference',
+//          start: '2019-03-11',
+//          end: '2019-03-13'
+//        },
+//        {
+//          title: 'Meeting',
+//          start: '2019-03-12T10:30:00',
+//          end: '2019-03-12T12:30:00'
+//        },
+//        {
+//          title: 'Lunch',
+//          start: '2019-03-12T12:00:00'
+//        },
+//        {
+//          title: 'Meeting',
+//          start: '2019-03-12T14:30:00'
+//        },
+//        {
+//          title: 'Birthday Party',
+//          start: '2019-03-13T07:00:00'
+//        },
+//        {
+//          title: 'Click for Google',
+//          url: 'http://google.com/',
+//          start: '2019-03-28'
+//        },
+		// synchro
+//	  {
+//         title:  'Synchro Summer \n meet @ PVPC', ----------------- example of a line break
+//            start:  '2017-08-10',
+//			end:  '2017-08-10',
+//            allDay: true
+//      }
+      ]
+    });
+
+  });
+</script>
+<style>
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: "Roboto",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+  }
+  #calendar {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+  <div id='calendar'></div>
+</body>
+</html>

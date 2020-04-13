@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>ALPs meet schedule for swimming, diving, water polo, synchro | Beacon Hill Community Pool</title>
+<meta name="description" content="A detailed schedule of all BHILL team meets and competitions for Summer 2018."/>
+<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+<meta name="format-detection" content="telephone=no">
+<meta name="HandheldFriendly" content="True">
+<meta http-equiv="cleartype" content="on">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/mdb.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<link href="css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.select.min.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<style>
+td.details-control {
+text-align:center;
+color:#333c4e;
+cursor: pointer;
+}
+tr.shown td.details-control {
+text-align:center; 
+color:red;
+}
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark unique-color-dark scrolling-navbar" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="#top" data-scroll data-options='{ "easing": "linear" }'>BHILL</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="about.html">About BHILL Pool</a>
+                    <a class="dropdown-item" href="daily-schedule.html">Daily Schedule</a>
+                    <a class="dropdown-item" href="lessons.html">Lessons</a>
+                    <a class="dropdown-item" href="staff.html">Lifeguards &amp; Staff</a>
+                    <a class="dropdown-item" href="rules-regulations.html">Pool Rules</a>
+                    <a class="dropdown-item" href="rules-regulations.html#parties">Book a party</a>
+                </div>
+            </li>
+          <li class="nav-item"><a class="nav-link" href="programs.html" >Programs</a></li>
+          <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="teams.html">Teams overview</a>
+                    <a class="dropdown-item" href="meets.html">Meet schedule</a>
+                </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="membership-fees.html">Registration</a></li>
+          <li class="nav-item"><a href="" data-toggle="modal" data-target="#contact" class="nav-link" >Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://alpsaquatics.ca/?lang=en" target="_blank">ALPs</a></li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item"><a href="https://www.google.ca/maps/place/Beacon+Hill+Pool/@45.440027,-73.8440101,16.5z/data=!4m13!1m7!3m6!1s0x4cc93c02ab24ad43:0x1e23bfebf34ab59d!2s110+Harwood+Gate,+Beaconsfield,+QC+H9W+3A3!3b1!8m2!3d45.4398399!4d-73.842808!3m4!1s0x4cc93ea7fd157e07:0x9bfe32674544f3f5!8m2!3d45.4398399!4d-73.842808" class="nav-link" target="_blank" title="Directions"><i class="fa fa-map"></i></a></li>
+          <li class="nav-item"><a href="http://www.facebook.com/BeaconHillCommunityPool" class="nav-link" target="_blank" title="Like us on Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li class="nav-item"><a href="http://twitter.com/BeaconHillPool" class="nav-link" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="http://forum.bhca-acbh.org" class="nav-link" target="_blank" title="Beacon Hill Community Forum"><i class="fa fa-comments-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+    <main class="mt-5 pt-5">
+        <div class="container">
+            <section class="">
+				<div class="row wow fadeIn">
+                    <div class="col-lg-12 col-md-12">
+                        <h1 class="main-title">ALPs Teams Schedule</h1>
+                            <p>2018 schedule for all ALPs-sanctioned meets, games, and competitions.</p>
+					</div>
+                </div>
+        		<hr class="my-3">
+                <div class="row mt-2 wow fadeIn">
+                  <div class="col-lg-12 col-md-12 mb-4">                    
+                   	  <!--<p class="small"><a href="" data-toggle="modal" data-target="#table">How do I use this table?</a></p> -->
+                        <div class="table-responsive">
+                            <table class="display" id="example" cellspacing="0">
+                                <thead align="left">
+                                    <tr>
+                                        <th width="">Date (mm/dd)</th>
+                                        <th width="">Event</th>
+                                        <th width="">Location</th>
+                                        <th width="">Time</th>
+                                        <th width="">Notes/Results</th>
+                                    </tr>
+                                </thead>
+                            </table>
+						</div>
+                          <div class="btn-group mt-4">
+                              <button class="btn btn-md unique-color-dark" onClick="pScreen()">Print display</button>&nbsp;&nbsp;
+                              <div class="dropdown">
+                                 <button class="btn btn-md btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find a pool</button>
+                                 <div class="dropdown-menu dropdown-primary">
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#bdac">BDAC</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#beau">BEAU</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#bhts">BHTS</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#cedar">CEDAR</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#dixie">DIXIE</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#hcp">HCP</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#hyc">HYC</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#mwac">MWAC</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#pvpc">PVPC</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#sen">SEN</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#shore">SHORE</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#side">SIDE</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#val">VAL</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#vik">VIK</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#wlrc">WLRC</a>
+                                    <a class="dropdown-item" href="" data-toggle="modal" data-target="#wsmt">WSMT</a>
+                                 </div>
+                               </div>
+                           </div>
+                       </div>
+                  </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+        <div class="pt-4 pb-4">
+          <p>Beacon Hill Pool, 110 Harwood Gate, Beaconsfield QC, Canada H9W 3A3</p>
+              <a class="btn btn-outline-white" href="mailto:beaconhillpool@gmail.com">Email us<i class="fa fa-envelope ml-2"></i></a>
+              <a class="btn btn-outline-white" href="tel:514-697-3461" target="_blank" role="button">Call us<i class="fa fa-phone ml-2"></i></a>
+        </div>
+    <div class="footer-copyright py-3">&copy; <script>document.write(new Date().getFullYear())</script> Beacon Hill Pool.</div>
+  </footer>
+  
+  <!-- HOW TO USE TABLE -->
+  <div class="modal fade" id="table" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">Meet schedule</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Use the search form in the top right corner of the table to find the information you need.</p>
+                    <p>Begin typing in a search string and the table will automatically filter and display information that matches the string.</p>
+                    <p>All events are listed in chronological order.</p>
+                    <p>Horizontal scrolling is enabled on phones and tablets. Swipe left to reveal the entire schedule.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- POOL ADDRESS AND MAPS ------------------------------------------- -->
+    
+    <!-- BDAC -->
+    <div class="modal fade" id="bdac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">BDAC</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Baie D'Urf&eacute; Aquatic Club</h5><p>20613 Lakeshore Road, Baie d'Urfé, QC H9X 2Z4<br/><a href="tel:514-457-1901">514-457-1901</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/20613+Rue+Lakeshore,+Baie-d'Urf%C3%A9,+QC+H9X+2Z4/@45.4053668,-73.9241379,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc938fbd24758e7:0x2acca6d5d23494e1!8m2!3d45.4053668!4d-73.9219492" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEAU -->
+    <div class="modal fade" id="beau" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">BEAU</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Beaurepaire Pool</h5><p>545 Beaurepaire Dr., Beaconsfield, QC H9W 4A7<br/><a href="tel:514-505-1423">514-505-1423</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/545+Beaurepaire+Dr,+Beaconsfield,+QC+H9W+3C9/@45.4254871,-73.8929441,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9393fd827c493:0xaab7c927f52380e5!8m2!3d45.4254871!4d-73.8907554" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BHTS -->
+    <div class="modal fade" id="bhts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">BHTS</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Beaconsfield Heights Community Swimming Pool</h5><p>275 Allancroft Road, Beaconsfield QC., H9W 2R7<br/><a href="tel:514-694-0636">514-694-0636</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/275+Allancroft+Rd,+Beaconsfield,+QC+H9W+2R7/@45.4404795,-73.8618905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93955a4e8b8e7:0xc343767d48df290a!8m2!3d45.4404795!4d-73.8597018" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CEDAR -->
+    <div class="modal fade" id="cedar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">CEDAR</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Cedar Park Heights Pool</h5><p>22 Robinsdale Ave., Pointe-Claire, QC H9R 2J6<br/><a href="tel:514-697-3236">514-697-3236</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/22+Robinsdale+Ave,+Pointe-Claire,+QC+H9R+2J5/@45.4457668,-73.8252765,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93c232a446da7:0x9ee6822357041964!8m2!3d45.4455599!4d-73.8231922" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIXIE -->
+    <div class="modal fade" id="dixie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">DIXIE</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Dixie Pool</h5><p>695, 54ème Avenue, Lachine, QC H8T 3A2<br/><a href="tel:514-637-6149">514-637-6149</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Piscine+Dixie+Pool/@45.4439293,-73.7204886,17z/data=!4m12!1m6!3m5!1s0x4cc91640f8dbb931:0x36d91698ebe8bf3!2sPiscine+Dixie+Pool!8m2!3d45.4439293!4d-73.7182999!3m4!1s0x4cc91640f8dbb931:0x36d91698ebe8bf3!8m2!3d45.4439293!4d-73.7182999" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HCP -->
+    <div class="modal fade" id="hcp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">HCP</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Hudson Community Pool</h5><p>393a Main, Hudson QC, J0P 1H0<br/><a href="tel:450-202-1402">450-202-1402</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/393+Rue+Main,+Hudson,+QC+J0P/@45.4548599,-74.1424665,15z/data=!4m5!3m4!1s0x4cc934e9c6673385:0x543b7e41e4318cf7!8m2!3d45.456034!4d-74.138132" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HYC -->
+    <div class="modal fade" id="hyc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">HYC</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Hudson Yacht Club</h5><p>10 Rue du Yacht Club, Hudson, QC J0P 1H0<br/><a href="tel:450-458-5326">450-458-5326</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/10+Rue+du+Yacht+Club,+Hudson,+QC/@45.4614933,-74.1445106,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc934c72ccd51a9:0xfd598033c4967426!8m2!3d45.4614933!4d-74.1423219" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MWAC -->
+    <div class="modal fade" id="mwac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">MWAC</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Montreal West Aquatic Club</h5><p>220 Bedbrook, Montreal West, Quebec, H4X 1S1<br/><a href="tel:514-489-6472">514-489-6472</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/220+Bedbrook+Ave,+Montreal-West,+QC+H4X+1S1/@45.4529501,-73.6564372,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9172728a9c16f:0x5da9d03168bd5fd8!8m2!3d45.4529501!4d-73.6542485" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PVPC -->
+    <div class="modal fade" id="pvpc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">PVPC</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Piscine du Village de Pointe Claire</h5><p>4 Avenue Ste-Anne, Pointe-Claire QC H9S 4P5<br/><a href="tel:514-694-5966">514-694-5966</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Piscine+Village/@45.4275808,-73.8275638,17z/data=!4m13!1m7!3m6!1s0x4cc93e900ce0def7:0xc53d4562c4dae20!2s4+Avenue+Sainte-Anne,+Pointe-Claire,+QC+H9S+4P5!3b1!8m2!3d45.4275808!4d-73.8253751!3m4!1s0x4cc93e90108cc84b:0x9964ecae582b930f!8m2!3d45.428079!4d-73.8243592" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEN -->
+    <div class="modal fade" id="sen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">SEN</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Senneville Pool</h5><p>20 Morningside Drive, Senneville QC H9X 1A3<br/><a href="tel:514-457-6020">514-457-6020, Ext. 190</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Senneville+Park/@45.4137647,-73.9610222,17z/data=!4m13!1m7!3m6!1s0x4cc93833c17c2d33:0x8580acfa64d8cf1d!2s20+Avenue+Morningside,+Senneville,+QC!3b1!8m2!3d45.4137647!4d-73.9588335!3m4!1s0x4cc938339fd42625:0x54de9e48c1646194!8m2!3d45.415254!4d-73.9580784" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHORE -->
+    <div class="modal fade" id="shore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">SHORE</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Lakeshore Pool</h5><p>1 Crewe Road, Pointe-Claire, QC H9S 4T4<br/><a href="tel:514-695-8551">514-695-8551</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Piscine+Lakeshore+Pool/@45.4365966,-73.8250579,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93c27600c609d:0x7e5e2e8ba93fe925!8m2!3d45.4365966!4d-73.8228692" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDE -->
+    <div class="modal fade" id="side" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">SIDE</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Lakeside Swimming Club</h5><p>22 Ovide, Pointe-Claire, QC H9S 4T4<br/><a href="tel:514-694-5223">514-694-5223</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Lakeside+Swimming+Pool/@45.443312,-73.8050472,17z/data=!4m13!1m7!3m6!1s0x4cc93c329dd58491:0x4e2a8cbe9afbc3e6!2s22+Avenue+Ovide,+Pointe-Claire,+QC!3b1!8m2!3d45.443312!4d-73.8028585!3m4!1s0x4cc93c2d60a5f635:0xd2130deb240cbfbc!8m2!3d45.4441741!4d-73.8034762" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VAL -->
+    <div class="modal fade" id="val" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">VAL</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Valois Pool</h5><p>40 de la Baie de Valois, Pointe Claire, QC, H9R 4B3<br/><a href="tel:514-426-8961">514-426-8961</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Valois+Swimming+Pool/@45.4526554,-73.7955945,17z/data=!4m8!1m2!2m1!1s40+de+la+Baie+de+Valois,+Pointe+Claire,+QC,+H9R+4B3!3m4!1s0x4cc93db58734f627:0x554a0f5b497436db!8m2!3d45.45168!4d-73.793101" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIK -->
+    <div class="modal fade" id="vik" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">VIK</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Viking Pool</h5><p>111 Viking Avenue, Pointe-Claire, QC H9R 1K6<br/><a href="tel:514-428-9309">514-428-9309</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/111+Avenue+Viking,+Pointe-Claire,+QC+H9R+1K4/@45.4625153,-73.8133793,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93c43131df6ab:0x3544a27204cffca5!8m2!3d45.4625153!4d-73.8111906" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WLRC -->
+    <div class="modal fade" id="wlrc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">WLRC</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Western Lachine Recreation Center</h5><p>4070 rue Victoria, Lachine, QC H8T 1K3<br/><a href="tel:514-637-0703">514-637-0703</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/CRLO-WLRC/@45.440583,-73.7041863,17z/data=!4m13!1m7!3m6!1s0x4cc9165e7953014d:0xb56c16364531292!2s4070+Rue+Victoria,+Lachine,+QC!3b1!8m2!3d45.440583!4d-73.7019976!3m4!1s0x4cc9165e79411be3:0xc122591486e841a6!8m2!3d45.4405402!4d-73.7020746" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WSMT -->
+    <div class="modal fade" id="wsmt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">WSMT</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Westmount Recreation Center Municipal Pool</h5><p>4675 Ste-Catherine West, Westmount, QC, H3Z 1S4<br/><a href="tel:514-989-5353">514-989-5353</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.google.ca/maps/place/Westmount+Recreation+Centre/@45.4791381,-73.5987759,17z/data=!4m13!1m7!3m6!1s0x4cc910a0f8fb4985:0x1d57db2d0e5fe039!2s4675+Rue+Sainte-Catherine,+Westmount,+QC+H3Z+1S4!3b1!8m2!3d45.4791381!4d-73.5965872!3m4!1s0x4cc910a0f9edbfc1:0x7f73e36b480ac6e9!8m2!3d45.4795167!4d-73.5972999" class="btn btn-md unique-color-dark" target="_blank">Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ------------- END POOL ADDRESSES --------------------------------- -->
+<!-- CONTACT FORM -->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">Contact BHILL</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--<form action="https://formspree.io/beaconhillpool@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="BHILL contact form" />
+                        <div class="md-form">
+                            <input type="text" name="name" id="name" class="form-control">
+    						<label for="name">Name</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="email" name="_replyto" id="email" class="form-control">
+    						<label for="email">Email</label>
+                        </div>
+                        <div class="md-form">
+                            <textarea type="text" name="message" id="message" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <input type="hidden" name="_format" value="plain" />
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="hidden" name="_next" value="//bhill.pl/thanks.html" />
+                        <input type="submit" class="btn unique-color-dark btn-rounded btn-md" value="Send">
+                    </form> -->
+                    
+                    <form name="contact" action="http://bhill.pl/cgi-bin/contactForm.pl" method="post">
+                        <div class="md-form">
+                            <input id="name"  type="text" placeholder="Name" name="name" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <input id="date" type="email" placeholder="Email" name="date" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <textarea id="comments" placeholder="Message" name="comments" class="form-control md-textarea" rows="3"></textarea>
+                        </div><br>
+                        <input class="btn unique-color-dark btn-rounded btn-md" type="submit" value="Send">
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script type="text/javascript">
+new WOW().init();
+</script>
+<script type="text/javascript">
+smoothScroll.init();
+</script>
+
+<!-- ------------------ edit schedule below this line ---------------------- -->
+
+<script>
+
+
+     $(document).ready(function () {
+
+         var table = $('#example').DataTable({
+             "data": testdata.data,
+             select:"single",
+             "columns": [
+                 
+                 { "data": "date" },
+                 { "data": "event" },
+                 { "data": "location" },
+                 { "data": "time" },
+				 {
+					 "className": 'details-control',
+                     "orderable": false,
+                     "data": null,
+                     "defaultContent": '',
+                     "render": function () {
+                         return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+                     },
+                     width:"15px"
+                 },
+             ],
+             "order": [[0, 'asc']] // this sorts table by first column, ie., chronological order
+         });
+
+         // Add event listener for opening and closing details
+         $('#example tbody').on('click', 'td.details-control', function () {
+             var tr = $(this).closest('tr');
+             var tdi = tr.find("i.fa");
+             var row = table.row(tr);
+
+             if (row.child.isShown()) {
+                 // This row is already open - close it
+                 row.child.hide();
+                 tr.removeClass('shown');
+                 tdi.first().removeClass('fa-minus-square');
+                 tdi.first().addClass('fa-plus-square');
+             }
+             else {
+                 // Open this row
+                 row.child(format(row.data())).show();
+                 tr.addClass('shown');
+                 tdi.first().removeClass('fa-plus-square');
+                 tdi.first().addClass('fa-minus-square');
+             }
+         });
+
+         table.on("user-select", function (e, dt, type, cell, originalEvent) {
+             if ($(cell.node()).hasClass("details-control")) {
+                 e.preventDefault();
+             }
+         });
+     });
+
+    function format(d){
+        
+         // `d` is the original data object for the row
+         return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+			 '<tr>' +
+                 '<td colspan="4">' + d.notes+ '</td>' +
+             '</tr>' +
+         '</table>';  
+    }
+
+    var testdata = {
+    "data": [
+    
+	// ----------- DIVING ---------------------
+    {
+    "date": "06/30",
+    "event": "Diving vs PVPC",
+    "location": "PVPC",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/07",
+    "event": "Diving vs MWAC",
+    "location": "MWAC",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/14",
+    "event": "Diving vs HCP",
+    "location": "BHILL",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/21",
+    "event": "Diving vs DIXIE",
+    "location": "DIXIE",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/28",
+    "event": "Diving BYE WEEK",
+    "location": "--",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/29",
+    "event": "Diving Novice Meet",
+    "location": "SIDE",
+    "time": "--",
+    "notes": "Results - "
+    },
+
+	{
+    "date": "08/04",
+    "event": "Diving vs BEAU",
+    "location": "BHILL",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/11",
+    "event": "Diving vs SEN",
+    "location": "BHILL",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/18",
+    "event": "Diving FINALS",
+    "location": "TBD",
+    "time": "--",
+    "notes": "Results - "
+    },
+	
+	
+	// ----------- SYNCHRO ---------------------
+	
+	{
+    "date": "08/08",
+    "event": "Synchro Summer Swimmer's Competition",
+    "location": "VIK",
+    "time": "12:00 pm",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/14",
+    "event": "Synchro Junior/Senior Solos and Duets",
+    "location": "HCP",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/16",
+    "event": "Synchro Team Competition",
+    "location": "SHORE",
+    "time": "--",
+    "notes": "Results - "
+    },
+	
+	// ----------- SWIM TEAM ---------------------
+	
+	{
+    "date": "06/26",
+    "event": "Swim Team vs WAC",
+    "location": "WAC",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/03",
+    "event": "Swim Team - BYE WEEK",
+    "location": "--",
+    "time": "--",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/10",
+    "event": "Swim Team vs CEDAR",
+    "location": "CEDAR",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/17",
+    "event": "Swim Team vs BDAC",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/24",
+    "event": "Swim Team vs RPRA",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/31",
+    "event": "Swim Team vs VIK",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/07",
+    "event": "Swim Team vs SIDE",
+    "location": "SIDE",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/10",
+    "event": "Swim Team - SECTIONS",
+    "location": "CEDAR",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "08/17",
+    "event": "Swim Team - FINALS",
+    "location": "BDAC",
+    "time": "",
+    "notes": "Results - "
+    },
+
+	// ----------- WATER POLO ---------------------
+	
+//	{
+//    "date": "07/06",
+//    "event": "Water Polo - Summer Player's Tournament",
+//    "location": "CEDAR",
+//    "time": "",
+//    "notes": "Results - "
+//    },
+	
+	// regular season games below this line ----------
+	{
+    "date": "06/27",
+    "event": "Water Polo vs HCP",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/01",
+    "event": "Water Polo vs DIXIE",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/04",
+    "event": "Water Polo vs WAC",
+    "location": "WAC",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/08",
+    "event": "Water Polo vs BEAU",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/11",
+    "event": "Water Polo vs CEDAR",
+    "location": "CEDAR",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/15",
+    "event": "Water Polo - BYE week ",
+    "location": "",
+    "time": "",
+    "notes": "Results - "
+    },
+	{
+    "date": "07/19",
+    "event": "Water Polo vs SIDE",
+    "location": "BHILL",
+    "time": "",
+    "notes": "Results - "
+    }
+//	{
+//    "date": "07/26",
+//    "event": "Water Polo - Playoff game night 1 ",
+//    "location": "BDAC",
+//    "time": "",
+//    "notes": "Results - "
+//    },
+	
+    ]
+    };
+</script>
+<script>
+function pScreen() {
+    window.print();
+}
+</script>
+</body>
+
+</html>
