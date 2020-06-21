@@ -181,13 +181,115 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
                 		<h2 class="title">Registration</h2>
     				</div>
     			</div>
-                
+                <div class="row wow fadeIn mt-4 mb-4">
+                    <div class="col-lg-12 col-md-12">
+                    	<h4 class="mb-4"><span class="badge unique-color-dark">Step 1: Online Registration</span></h4>
+                        <p>Due to health concerns associated with COVID-19 all 2020 registrations are to be completed online. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h6>ONLINE FORMS</h6>
+                    	<ul>
+                            <li><a href="https://forms.gle/FcXJWkRQ73mufa7j6" target="_blank">Registration</a>&nbsp; | &nbsp;<!--<a href="https://forms.gle/UtzeHZrqcXGFK54R7" target="_blank">Adh&eacute;sion </a>--> Version française à venir</li>
+                            <li><a href="https://forms.gle/Eptmx1vnwJmTj3JY6" target="_blank">Bronze Cross/Medallion</a>&nbsp; | &nbsp;<!--<a href="https://forms.gle/eHbsP6dt8WD7LwRb7" target="_blank">M&eacute;daille/croix de bronze</a>--> Version française à venir</li>
+                        </ul>
+                        <p class="small">If you do not have a gmail account please use the following <a href="https://forms.gle/vtcNszMgMxesHVAK6" target="_blank">English</a> or <!--<a href="https://forms.gle/7wywmUjqexYtHaEY7" target="_blank">French</a>--> (Version française à venir) online forms.</p>
+                    </div>
+                    <!--<div class="col-lg-6 col-md-6">
+                        <h6>PRINT VERSION</h6>
+                        <ul>
+                            <li><a href="forms/2019-Beacon-Hill-Pool-Member-Form-ENG.pdf" target="_blank">Registration</a>&nbsp; | &nbsp;<a href="forms/2019-Beacon-Hill-Pool-Member-Form-FR.pdf" target="_blank">Adh&eacute;sion</a></li>
+                            <li><a href="forms/2019_Beacon_Hill_Pool_Bronze_EN.pdf" target="_blank">Bronze Cross/Medallion</a>&nbsp; | &nbsp;<a href="forms/2019_Beacon_Hill_Pool_Bronze_FR.pdf" target="_blank">M&eacute;daille/croix de bronze</a> </li>
+                        </ul>
+                    </div>-->
+                </div>
                 <div class="row wow fadeIn mt-2 mb-5">
                     <div class="col-lg-8 col-md-8">
-                       
-                        <h6>COMING SOON</h6>
-                   	</div>
-                </div>   
+                        <h4 class="mb-4"><span class="badge unique-color-dark">Step 2: Payment</span></h4>
+                        <h6>PAYPAL</h6>
+                        <p class="mb-4">
+                            Pay securely with your credit card using PayPal.<br/></br/> 
+                            Please note that you must complete an application form regardless of your chosen payment method and that your registration information and payment method must match. 
+                            For Paypal payment select the appropriate option(s) from the menu. <strong>You can select more than one option from this list in the event that 
+                                you are paying for membership and courses</strong>. After your first selection a new browser window will open displaying your PayPal cart. To add another item 
+                                from the fees list navigate back to the menu and make your second selection. It will automatically be added to your cart.
+                        </p>
+                        <h6>INTERAC E-TRANSFER</h6>
+                        <p class="mb-4">Members also have the option of paying membership fees via interac e-transfer. <strong>In the message section of the transfer please enter the membership household last name, 
+                            then specify what fee(s) the payment is for</strong> (refer to the adjacent dropdown menu for list of fees).</p>
+
+                        <p>Please send all payments to the following recipient email address: <a href="mailto:bhpooltreasurer@gmail.com">bhpooltreasurer@gmail.com</a>. You may choose any security password you like as the account is set up for automatic deposit.</p>
+                        <h6>CHEQUE</h6>
+                        <p class="mb-4">If you are only able to pay by cheque <a href="mailto:beaconhillpool@gmail.com">please contact us to make arrangements</a>.</p>
+        
+                        </div>
+                    <div class="col-lg-4 col-md-4 mt-3">
+						<!--<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="BJS8Y8T6KSBE6">
+                            <input type="hidden" name="on0" value="Membership Type / Type d'Adhésion">
+                            <select name="os0" style="padding:10px; color:#666;">
+                                <option value="">- Select payment -</option> -->
+                                <!--<option value="Family / Famille">Family / Famille $445.00 CAD</option>
+                                <option value="Adult / Adulte (18+)">Adult / Adulte (18+) $325.00 CAD</option> -->
+                                <!--<option value="Family Early Bird (Exp. May 31)">Family early bird discount $395</option>
+                                <option value="Adult Early Bird  (Exp. May 31)">Adult early bird discount $275</option>
+                                <option value="Senior / Ainé (55+)">Senior (55+) $250</option>
+                                <option value="Teen / Adolescent (13-17)">Teen (13-17) $225</option>
+                            </select>
+                            <input type="hidden" name="currency_code" value="CAD">
+                            <br><br>
+                            <input type="submit" class="btn unique-color-dark btn-rounded btn-md"  name="submit"  alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form> -->
+                        <form target="paypal" id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="JZJTB64DR9EAE">
+                            <input type="hidden" name="on0" value="Membership & Course Fees">
+                            <p>Membership & Course Fees</p>
+                            <select name="os0" style="padding:10px; color:#666;">
+                                <option value="">- Select option -</option>
+                                <option value="Family/Famille">Family/Famille $395</option>
+                                <!--<option value="Family/Famille - NEW ONLY">Family/Famille - Earlybird $395</option>-->
+                                <option value="Adult/Adulte">Adult/Adulte $325</option>
+                                <!--<option value="Family early bird">Family early bird $395.00 CAD</option>
+                                <option value="Adult early bird">Adult early bird $275.00 CAD</option>-->
+                                <option value="Senior/Ainé">Senior/Ainé $250</option>
+                                <option value="Teen/Adolescent">Teen/Adolescent $225.00</option>
+                                <option value="Bronze Cross">Bronze Course $55.00</option>
+                                <!--<option value="Bronze Medallion">Bronze Medallion $55.00</option>-->
+                                <option value="Bronze Book">Bronze Manual only $45.00</option>
+                            </select>
+                            <input type="hidden" name="currency_code" value="CAD">
+<!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
+<!--<input type="submit" class="btn unique-color-dark btn-rounded btn-md"  name="Add to cart"  alt="PayPal - The safer, easier way to pay online!">
+ -->                           <br/><br/>
+                        	<button class="btn unique-color-dark btn-rounded btn-md" onClick="document.getElementById('paypal').submit();">Add to cart</button>
+                        	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                        <p class="small mt-3 mb-4">Please note that all payments via PayPal are subject to an additional 3% processing fee.</p>
+					</div>
+                </div>
+            </section> 
+            <hr class="between-section">
+			
+            <section class="">
+				<div class="row wow fadeIn mt-5 mb-3">
+                    <div class="col-lg-12 col-md-12">
+                		<h2 class="title">Make a Donation</h2>
+    				</div>
+    			</div>
+                <div class="row wow fadeIn mt-4 mb-5">
+                    <div class="col-lg-12 col-md-12">
+                        <p>Help fund capital improvements at Beacon Hill Pool with a small, one-time or recurring donation.</p>
+                        <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="P4VXDAM2YCDC2" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                        </form>-->
+                        <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P4VXDAM2YCDC2&source=url">Donate securely via PayPal</a> or Interac e-transfer (recipient <a href="mailto:bhpooltreasurer@gmail.com">bhpooltreasurer@gmail.com</a>, message: "donation")</p>
+                    </div>
+                </div>
             </section>  
 
         </div>
