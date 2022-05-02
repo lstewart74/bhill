@@ -178,7 +178,7 @@
                     	<h4 class="mb-4"><span class="badge unique-color-dark">Step 1: Online Registration</span></h4>
                     </div>
                     <div class="col-lg-12 col-md-12">
-                        <h6>ONLINE FORMS - 2022 VERSIONS COMING SOON</h6>
+                        <h6>ONLINE FORMS</h6>
                     	<ul>
                             <li><a href="https://forms.gle/gnRUaiuL1ywAPVc8A" target="_blank">Registration</a>&nbsp; | &nbsp;<a href="https://forms.gle/AkizHm4UryxPT8uJA" target="_blank">Adh&eacute;sion </a></li>
                             <li><a href="https://forms.gle/2csFesZ53cqNxnTr6" target="_blank">Bronze Cross/Medallion</a>&nbsp; | &nbsp;<a href="https://forms.gle/XroygBR8E3197zEq9" target="_blank">M&eacute;daille/croix de bronze</a></li>
@@ -201,12 +201,9 @@
                        <p class="mb-4">
                             Pay securely with your credit card using PayPal.<br/><br/> 
                             Please note that you must complete an application form regardless of your chosen payment method and that your registration information and payment method must match. 
-                            For Paypal payment select the appropriate option from the menu. <strong>At this time we are only able to receive payment for ONE membership fee option at a time. 
-                                If you require more than one fee option it will have to be completed in multiple transactions. We aplogize for 
-                                any inconvenience.
-                            </strong> <!--<strong>You can select more than one option from this list in the event that 
+                            For Paypal payment select the appropriate option from the menu. <strong>You can select more than one option from this list in the event that 
                                 you are paying for both membership and courses</strong>. After your first selection a new browser window will open displaying your PayPal cart. To add another item 
-                                from the fees list navigate back to the menu and make your second selection. It will automatically be added to your cart.-->
+                                from the fees list navigate back to the menu and make your second selection. It will automatically be added to your cart.
                         </p>
                         <h6>INTERAC E-TRANSFER</h6>
                         <p class="mb-4">Members also have the option of paying membership fees via interac e-transfer. <strong>In the message section of the transfer please enter the membership household last name, 
@@ -218,118 +215,25 @@
         
                     </div>
                     <div class="col-lg-4 col-md-4 mt-3">
-                        <div id="smart-button-container">
-                            <div style="text-align: center;">
-                              <div style="margin-bottom: 1.25rem;">
-                                <p>Membership Fee List</p>
-                                <select id="item-options">
-                                    <option value="Family/Famille (Early Bird until May 31)" price="410">Family/Famille (Early Bird until May 31) - 410 CAD</option>
-                                    <option value="Adult/Adulte" price="275">Adult/Adulte - 275 CAD</option>
-                                    <option value="Senior/Ainé" price="250">Senior/Ainé - 250 CAD</option>
-                                    <option value="Teen/Adolescent" price="225">Teen/Adolescent - 225 CAD</option>
-                                    <option value="Bronze course" price="60">Bronze course - 60 CAD</option>
-                                    <option value="Bronze Manual" price="55">Bronze Manual - 55 CAD</option>
-                                    <option value="Family+Bronze Course+Manual" price="525">Family+Bronze Course+Manual - 525 CAD</option>
-                                    <option value="Family+Bronze Course" price="470">Family+Bronze Course - 470 CAD</option>
-                                    <option value="Teen+Bronze Course+Manual" price="340">Teen+Bronze Course+Manual - 340 CAD</option>
-                                    <option value="Teen+Bronze Course" price="285">Teen+Bronze Course - 285 CAD</option></select>
-                                <select style="visibility: hidden" id="quantitySelect"></select>
-                              </div>
-                            <div id="paypal-button-container"></div>
-                            </div>
-                          </div>
-                          <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CAD" data-sdk-integration-source="button-factory"></script>
-                          <script>
-                            function initPayPalButton() {
-                              var shipping = 0;
-                              var itemOptions = document.querySelector("#smart-button-container #item-options");
-                          var quantity = parseInt();
-                          var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
-                          if (!isNaN(quantity)) {
-                            quantitySelect.style.visibility = "visible";
-                          }
-                          var orderDescription = 'Membership Fee List';
-                          if(orderDescription === '') {
-                            orderDescription = 'Item';
-                          }
-                          paypal.Buttons({
-                            style: {
-                              shape: 'pill',
-                              color: 'blue',
-                              layout: 'vertical',
-                              label: 'paypal',
-                              
-                            },
-                            createOrder: function(data, actions) {
-                              var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-                              var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
-                              var tax = (3 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(3)/100));
-                              if(quantitySelect.options.length > 0) {
-                                quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
-                              } else {
-                                quantity = 1;
-                              }
-                      
-                              tax *= quantity;
-                              tax = Math.round(tax * 100) / 100;
-                              var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
-                              priceTotal = Math.round(priceTotal * 100) / 100;
-                              var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
-                      
-                              return actions.order.create({
-                                purchase_units: [{
-                                  description: orderDescription,
-                                  amount: {
-                                    currency_code: 'CAD',
-                                    value: priceTotal,
-                                    breakdown: {
-                                      item_total: {
-                                        currency_code: 'CAD',
-                                        value: itemTotalValue,
-                                      },
-                                      shipping: {
-                                        currency_code: 'CAD',
-                                        value: shipping,
-                                      },
-                                      tax_total: {
-                                        currency_code: 'CAD',
-                                        value: tax,
-                                      }
-                                    }
-                                  },
-                                  items: [{
-                                    name: selectedItemDescription,
-                                    unit_amount: {
-                                      currency_code: 'CAD',
-                                      value: selectedItemPrice,
-                                    },
-                                    quantity: quantity
-                                  }]
-                                }]
-                              });
-                            },
-                            onApprove: function(data, actions) {
-                              return actions.order.capture().then(function(orderData) {
-                                
-                                // Full available details
-                                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                      
-                                // Show a success message within this page, e.g.
-                                const element = document.getElementById('paypal-button-container');
-                                element.innerHTML = '';
-                                element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                      
-                                // Or go to another URL:  actions.redirect('thank_you.html');
-                      
-                              });
-                            },
-                            onError: function(err) {
-                              console.log(err);
-                            },
-                          }).render('#paypal-button-container');
-                        }
-                        initPayPalButton();
-                          </script>
+                      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="DWN44FWCKYK3Y">
+                        <table>
+                        <tr><td><input type="hidden" name="on0" value="2022 Fees">2022 Membership Fees</td></tr><tr><td><select name="os0"><br/>
+                          <option value="Family/Famille (Early Bird until May 31)">Family/Famille (Early Bird until May 31) $410.00 CAD</option>
+                          <option value="Adult/Adulte">Adult/Adulte $275.00 CAD</option>
+                          <option value="Senior/Ainé">Senior/Ainé $250.00 CAD</option>
+                          <option value="Teen/Adolescent">Teen/Adolescent $225.00 CAD</option>
+                          <option value="Bronze Course">Bronze Course $60.00 CAD</option>
+                          <option value="Bronze Manual">Bronze Manual $55.00 CAD</option>
+                        </select> </td></tr>
+                        </table>
+                        <br/>
+                        <input type="hidden" name="currency_code" value="CAD">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                        
                         <p class="small mt-3 mb-4">Please note that all payments via PayPal are subject to an additional 3% processing fee.</p>
 					</div>
                 </div>
@@ -351,7 +255,7 @@
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                             <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
                         </form>-->
-                        <p><a href="">Donate securely via PayPal</a> (Coming soon) or Interac e-transfer (recipient <a href="mailto:bhpooltreasurer@gmail.com">bhpooltreasurer@gmail.com</a>, message: "donation")</p>
+                        <p><a href="https://www.paypal.com/donate/?hosted_button_id=XLUQR5DBPWXX8" target="_blank">Donate securely via PayPal</a> or Interac e-transfer (recipient <a href="mailto:bhpooltreasurer@gmail.com">bhpooltreasurer@gmail.com</a>, message: "donation")</p>
                     </div>
                 </div>
             </section>  
